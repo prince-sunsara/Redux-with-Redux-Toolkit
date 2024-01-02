@@ -1,0 +1,17 @@
+REDUX:
+    > redux is a state management library
+    > it allows you to have global state
+    > this state can accessible in any components of the tree
+    > it is made by multiple slices (mini stores for understanding)
+
+    STORE:
+        > store is state which can be accessible in any components
+        > you can define anything or every need of you component in store
+    
+    ACTIONS:
+        > action is tell redux that what it should do to the state
+    
+    REDUCERS:
+        > it responsible for taking an action, and depending upon a type of action
+        > it make update in redux store
+        > it never directly make an update to the redux store, it copy the state, update it and than change whole state, it overwrite the previous state
