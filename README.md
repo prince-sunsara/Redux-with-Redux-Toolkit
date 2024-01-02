@@ -1,5 +1,65 @@
 # Learning About Redux, Redux-Toolkit
+
 In this repository, I'm just learning about how redux and redux-toolkit work.
 
 Here is reference video where I learn it:
 [Redux - with Redux Toolkit](https://youtu.be/5yEG6GhoJBs?si=6TupX2VgDwqAyiEw)
+
+# REDUX:
+
+    > redux is a state management library
+    > it allows you to have global state
+    > this state can accessible in any components of the tree
+    > it is made by multiple slices (mini stores for understanding)
+
+### STORE:
+
+        > store is state which can be accessible in any components
+        > you can define anything or every need of you component in store
+
+### ACTIONS:
+
+        > action is tell redux that what it should do to the state
+
+### REDUCERS:
+
+        > it responsible for taking an action, and depending upon a type of action
+        > it make update in redux store
+        > it never directly make an update to the redux store, it copy the state, update it and than change whole state, it overwrite the previous state
+
+## METHODS:
+
+### 1. configureStore()
+
+        > creates a Redux store, and also automatically configure the Redux DevTools extension so that you can inspect the store while developing.
+
+### 2. Provider
+
+        > it allow us to communicate with store
+        > Once the store is created, we can make it available to our React components by putting a React-Redux <Provider>
+        > Import the Redux store we just created, put a <Provider> around your <App>, and pass the store as a prop:
+            <Provider store={store}>
+                <App />
+            </Provider />
+
+### 3. createSlice:
+
+        > this create everything we need, anything related to our slice (slice file)
+        > actions, reducers, state all is created slice file
+
+### 4. useSelector:
+
+        > A hook to access the redux store's state.
+        > This hook takes a selector function as an argument.
+        > The selector is called with the store state
+
+### 5. useDispatch:
+
+        > A hook to access the redux dispatch function.
+
+### createAsyncThunk()
+
+        > this method is for asynchronous function,
+        > while use it you have to add extraReducer in slice
+
+# END HERE

@@ -41,4 +41,10 @@ METHODS:
         > A hook to access the redux dispatch function.
 
 
+    createAsyncThunk()
+        > this method is for asynchronous function,
+        > while use it you have to add extraReducer in slice
 
+
+
+            /*  END HERE  */
